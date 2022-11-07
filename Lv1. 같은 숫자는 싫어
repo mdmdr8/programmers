@@ -1,4 +1,4 @@
-arr=[2,2,0,3,4,4]
+# 1방법
 
 def solution(arr):
     answer=[]
@@ -8,4 +8,12 @@ def solution(arr):
             answer.append(arr[i])
     return (answer)
 
-print(solution(arr))
+
+# 2방법
+
+def solution(arr):
+    answer = []
+    for i in arr:
+        if answer[-1:] == [i]: continue
+        answer.append(i)
+    return answer
