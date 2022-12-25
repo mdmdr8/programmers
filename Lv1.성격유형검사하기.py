@@ -15,5 +15,5 @@ def solution(survey, choices):
             answer += i[0]
         else:
             answer += i[1]
-        
+         
     return answer
